@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">  <!-- data-bs-theme="dark" -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Quitanda Online :: Título da Página</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fivicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fivicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fivicon/favicon-16x16.png">
+    <link rel="manifest" href="img/fivicon/site.webmanifest">
+    <link rel="mask-icon" href="img/fivicon/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="img/fivicon/favicon.ico">
+    <link name="msapplication-TileColor" content="#da532c">
+    <link rel="msapplication-config" href="img/fivicon/browserconfig.xml">
+    <link name="theme-color" content="#ffffff">
+
+    <style>
+        p.truncate-3l{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+  </head>
+  <body style="min-width: 372px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+        <div class="container">
+            <a class="navbar-brand" href=""><strong>Quitanda Online</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">Contacto</a>
+                    </li>
+                </ul>
+                <div class="align-self-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Quero Me Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-white">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="bi.svg#heart-fill" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container">
+        <div id="carouselMain" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active text-center" data-bs-interval="3000">
+                    <img src="img/slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <img src="img/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="3000">
+                    <img src="img/slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <img src="img/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="3000">
+                    <img src="img/slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <img src="img/slides/slide01small.jpg" alt="" class="img-fluid d-block d-md-none">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+        <hr />
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                            <button class="btn btn-danger">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="ml-3 d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option>Ordenar pelo nome</option>
+                                <option>Ordenar pelo menor preço</option>
+                                <option>Ordenar pelo maior preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block">
+                            <ul class="pagination pagination-sm my-0">
+                                <li class="page-item">
+                                    <button class="page-link">1</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">2</button>
+                                </li>
+                                <li class="page-item disabled">
+                                    <button class="page-link">3</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">4</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">5</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">6</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3" />
+            <div class="row g-3">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000001.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000002.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000003.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <button class="btn btn-light disabled" disabled>
+                                    <small>Reabastecendo Estoque</small>
+                                </button>
+                            </div>
+                            <small class="text-danger"><b>Produto Esgotado!</b></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000004.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000005.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000006.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000007.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000008.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000009.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000010.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000011.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <img src="img/produtos/000012.jpg" class="card-img-top">
+                        <div class="card-header">
+                            450,00 kz
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Prata</h5>
+                            <p class="card-text truncate-3l">
+                                Banana Prata da melhor qualidade possível, direto do produtor rural para a sua mesa
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button class="btn btn-danger">
+                                    Adicione ao Carrinho
+                                </button>
+                            </form>
+                            <small class="text-success">320,5kg em estoque</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3"/>
+            <div class="row pb-4">
+                <div class="col-12">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="ml-3 d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option>Ordenar pelo nome</option>
+                                <option>Ordenar pelo menor preço</option>
+                                <option>Ordenar pelo maior preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block">
+                            <ul class="pagination pagination-sm my-0">
+                                <li class="page-item">
+                                    <button class="page-link">1</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">2</button>
+                                </li>
+                                <li class="page-item disabled">
+                                    <button class="page-link">3</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">4</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">5</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">6</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div style="height: 273px;" class="d-block d-md-none"></div>
+    <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+    <div style="height: 129px;" class="d-none d-lg-block"></div>
+
+    <footer class="border-top fixed-bottom text-muted bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    &copy; 2023 - Quitanda Online Ltda ME<br>
+                    Rua Virtual Inexistente, 171, Compulândia/PC <br>
+                    Identificador 99.999.999/0001-99
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a><br>
+                    <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a><br>
+                    <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a><br>
+                    <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a><br>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    <a href="/contacto.html" class="text-decoration-none text-dark">Contacto pelo site</a><br>
+                    Email: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">email@dominio.com</a><br>
+                    Telefone: <a href="phone: 921222222222" class="text-decoration-none text-dark">(+244) 9212222222</a><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
+
+<!--
+    <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselMain" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselMain" data-bs-slide-to="2"></li>
+                </ol>
+
+                <a class="carousel-control-prev" href="#carouselMain" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselMain" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+        </a>
+-->
