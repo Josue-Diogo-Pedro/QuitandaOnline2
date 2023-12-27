@@ -115,8 +115,26 @@
                         </fieldset>
                         <fieldset>
                             <legend>Senha de Acesso</legend>
+                            <div class="mb-3">
+                                <label for="txtSenha" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="txtSenha">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtConfSenha" class="form-label">Confirmação da Senha</label>
+                                <input type="password" class="form-control" id="txtConfSenha">
+                            </div>
                         </fieldset>
                     </div>
+                </div>
+                <hr>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" value="" id="chkPromocoes"></input>
+                    <label for="chkPromocoes" class="form-check-label">Desejo receber informações sobre promocoes.</label>
+                </div>
+                <div class="mb-3">
+                    <a class="btn btn-light btn-outline-danger" href="index.html">Cancelar</a>
+                    <input type="button" value="Criar meu cadastro" class="btn btn-danger" 
+                        onclick="window.location.href='confirmacaocadastro.html'">
                 </div>
             </form>
         </div>
