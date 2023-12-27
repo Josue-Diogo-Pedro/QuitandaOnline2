@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">  <!-- data-bs-theme="dark" -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Quitanda Online :: Cadastro</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fivicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fivicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fivicon/favicon-16x16.png">
+    <link rel="manifest" href="img/fivicon/site.webmanifest">
+    <link rel="mask-icon" href="img/fivicon/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="img/fivicon/favicon.ico">
+    <link name="msapplication-TileColor" content="#da532c">
+    <link rel="msapplication-config" href="img/fivicon/browserconfig.xml">
+    <link name="theme-color" content="#ffffff">
+
+  </head>
+  <body style="min-width: 372px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+        <div class="container">
+            <a class="navbar-brand" href=""><strong>Quitanda Online</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">Contacto</a>
+                    </li>
+                </ul>
+                <div class="align-self-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Quero Me Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-white">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="bi.svg#heart-fill" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Informe seus dados, por favor</h1>
+            <form>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <fieldset class="row">
+                            <legend>Dados Pessoais</legend>
+                            <div class="mb-3">
+                                <label for="txtNome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="txtNome">
+                            </div>
+                            <div class="mb-3 col-md-6 col-xl-4">
+                                <label for="txtCPF" class="form-label">CPF</label>
+                                <span class="form-text">(somente números)</span>
+                                <input type="text" class="form-control" id="txtCPF">
+                            </div>
+                            <div class="mb-3 col-md-6 col-xl-4">
+                                <label for="txtDataNascimento" class="form-label">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="txtDataNascimento">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contactos</legend>
+                            <div class="mb-3 col-md-8">
+                                <label for="txtEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="txtEmail">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="txtTelefone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="txtTelefone" placeholder="926000000">
+                                <span class="form-text">(com DDD, somente números)</span>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <fieldset class="row">
+                            <legend>Endereço</legend>
+                            <div class="mb-3 col-md-6 col-lg-4">
+                                <label for="txtCEP" class="form-label">CEP</label>
+                                <input type="text" class="form-control" id="txtCEP">
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-8 align-self-end">
+                                <textarea class="form-control text-muted bg-light " style="height: 68px;">
+                                    Digite o CEP para buscarmos o endereço.</textarea>
+                            </div>
+                            <div class="mb-3 col-md-4">
+                                <label for="txtNumero" class="form-label">Número</label>
+                                <input type="text" class="form-control" id="txtNumero">
+                            </div>
+                            <div class="mb-3 col-md-8">
+                                <label for="txtComplemento" class="form-label">Complemento</label>
+                                <input type="text" class="form-control" id="txtComplemento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtReferencia" class="form-label">Referência</label>
+                                <input type="text" class="form-control" id="txtReferência">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Senha de Acesso</legend>
+                            <div class="mb-3">
+                                <label for="txtSenha" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="txtSenha">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtConfSenha" class="form-label">Confirmação da Senha</label>
+                                <input type="password" class="form-control" id="txtConfSenha">
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" value="" id="chkPromocoes"></input>
+                    <label for="chkPromocoes" class="form-check-label">Desejo receber informações sobre promocoes.</label>
+                </div>
+                <div class="mb-3">
+                    <a class="btn btn-light btn-outline-danger" href="index.html">Cancelar</a>
+                    <input type="button" value="Criar meu cadastro" class="btn btn-danger" 
+                        onclick="window.location.href='confirmacaocadastro.html'">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div style="height: 273px;" class="d-block d-md-none"></div>
+    <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+    <div style="height: 129px;" class="d-none d-lg-block"></div>
+
+    <footer class="border-top fixed-bottom text-muted bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    &copy; 2023 - Quitanda Online Ltda ME<br>
+                    Rua Virtual Inexistente, 171, Compulândia/PC <br>
+                    Identificador 99.999.999/0001-99
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a><br>
+                    <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a><br>
+                    <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a><br>
+                    <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a><br>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    <a href="/contacto.html" class="text-decoration-none text-dark">Contacto pelo site</a><br>
+                    Email: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">email@dominio.com</a><br>
+                    Telefone: <a href="phone: 921222222222" class="text-decoration-none text-dark">(+244) 9212222222</a><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
